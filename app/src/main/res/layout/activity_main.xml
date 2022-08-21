@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Conversor de Celsius"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="30dp"
+        android:text="Escreva em CELSIUS:"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/edtCelsius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:backgroundTint="#DDA948"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvErr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="ERRO!!"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnFahrenheit"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#DDA948"
+        android:text="FAHRENHEIT"
+        android:textSize="22dp" />
+
+    <Button
+        android:id="@+id/btnKelvin"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#DDA948"
+        android:text="KELVIN"
+        android:textSize="22dp" />
+
+    <Switch
+        android:id="@+id/switchTheme"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp"
+        android:text="Dark" />
+
+
+</LinearLayout>
