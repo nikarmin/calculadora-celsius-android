@@ -34,9 +34,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="9dp"
+        android:hint="Digite o valor em graus Celsius"
         android:backgroundTint="#DDA948"
         android:minHeight="48dp"
         android:textColor="@color/black"
+        android:inputType="number"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView

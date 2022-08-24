@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     TextView error, txtUm, txtDois;
     Switch theme;
     View view;
+    Boolean dark = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,15 +42,18 @@ public class MainActivity extends AppCompatActivity {
                 if (theme.isChecked()){
                     theme.setTextColor(Color.parseColor("#F2F2F2"));
                     txtUm.setTextColor(Color.parseColor("#F2F2F2"));
+                    celsius.setTextColor(Color.parseColor("#F2F2F2"));
                     txtDois.setTextColor(Color.parseColor("#F2F2F2"));
                     view.setBackgroundColor(Color.parseColor("#2C3333"));
+                    dark = true;
                 }
 
-                else{
+                else {
                     theme.setTextColor(Color.BLACK);
                     txtUm.setTextColor(Color.BLACK);
                     txtDois.setTextColor(Color.BLACK);
                     view.setBackgroundColor(getResources().getColor(android.R.color.system_accent1_0));
+                    dark = false;
                 }
             }
         });
@@ -72,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
                     param.putDouble("chaveValor", valorF);
                     param.putString("chaveNome", nome);
+                    param.putBoolean("isDark", dark);
 
                     intent.putExtras(param);
                     startActivity(intent);
@@ -100,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
                         param.putDouble("chaveValor", valorK);
                         param.putString("chaveNome", nome);
+                        param.putBoolean("isDark", dark);
 
                         intent.putExtras(param);
                         startActivity(intent);
